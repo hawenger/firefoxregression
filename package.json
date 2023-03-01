@@ -10,8 +10,8 @@
   },
   "author": "Hannah Wenger",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "@playwright/test": "^1.27.0"
-  }
+  "dependencies": {
+    "@playwright/test": "^1.30.0"
+  },
+  "devDependencies": {}
 }
