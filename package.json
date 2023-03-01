@@ -1,0 +1,17 @@
+{
+  "name": "playwrightbug",
+  "version": "1.0.0",
+  "description": "Filing a Firefox regression bug with Playwright",
+  "scripts": {
+    "tests:all": "playwright test --config=playwright.config.ts",
+    "tests:all:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+    "tests:all:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+    "tests:all:firefox": "playwright test --config=playwright.config.ts --project=firefox"
+  },
+  "author": "Hannah Wenger",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.27.0"
+  }
+}
