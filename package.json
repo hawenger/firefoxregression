@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "description": "Filing a Firefox regression bug with Playwright",
   "scripts": {
+    "qa": "set NODE_ENV=qa",
+    "dev": "set NODE_ENV=development",
+    "uat": "set NODE_ENV=uat",
+    "prod": "set NODE_ENV=prod",
     "tests:all": "playwright test --config=playwright.config.ts",
     "tests:all:chrome": "playwright test --config=playwright.config.ts --project=chromium",
     "tests:all:webkit": "playwright test --config=playwright.config.ts --project=webkit",
-    "tests:all:firefox": "playwright test --config=playwright.config.ts --project=firefox"
+    "tests:all:firefox": "playwright test --config=playwright.config.ts --project=firefox",
+    "tests:all:qa:all": "set NODE_ENV=development&& playwright test --config=automated-checks/playwright/configs/base.config.ts",
+    "tests:all:dev:chrome": "set NODE_ENV=development&& playwright test --config=automated-checks/playwright/configs/base.config.ts --project=chromium",
+    "tests:all:dev:firefox": "set NODE_ENV=development&& playwright test --config=automated-checks/playwright/configs/base.config.ts --project=firefox",
+    "tests:all:dev:webkit": "set NODE_ENV=development&& playwright test --config=automated-checks/playwright/configs/base.config.ts"
   },
   "author": "Hannah Wenger",
   "license": "ISC",

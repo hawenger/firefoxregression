@@ -3,6 +3,7 @@ import project_configs from './project.config';
 
 
 const config: PlaywrightTestConfig = {
+globalSetup: require.resolve('../global-setup'),
   retries: 0,
   testDir: './tests',
   workers: 1,
